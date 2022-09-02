@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #201e1f;
+  color: #d69f7e;
+}
+
+#page-intro {
+  text-align: center;
+}
+
+#photo-intro {
+  text-align: center;
+}
+
+.photo {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#photo-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 10px;
+  max-width: 1400px;
+  margin: 0 auto;
+  /* gap: 20px; */
+}
+
+#link-container {
+  text-align: center;
+}
+
+#link-list {
+  text-align: center;
+  list-style-position: inside;
+}
