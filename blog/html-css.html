@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/html-css.css" />
   </head>
   <body>
-    <h1>CSS Concept Research - Display: Inline; vs Inline Block;</h1>
+    <h1>CSS Concept Research - display: inline; vs display: inline-block;</h1>
     <p>
       To properly explain this concept, we must first explore the CSS box model.
       Basically, the box model consists of a box object in the body of a
@@ -22,6 +22,21 @@
       alt="A picture of the the CSS Box Model"
     />
 
-    <p></p>
+    <p>
+      Every html element has a default display property. The display property
+      determines the element layout behaviour in relation to other elements on
+      the page. For example, &#60;div&#62;, &#60;p&#62; and &#60;h1&#62; (among
+      other) elements are block-level elements. This means that the element's box will start on
+      their own line, and take up the entire width of that line. Block-level
+      elements will push other elements onto another line. You can adjust this
+      default behaviour by accessing the display property in CSS like this:
+
+      <p>element-selector {display: value}</p> 
+      <p>
+        There are numerous different display values that you can use to manipulate 
+        the layout of your web page. The values we will be looking at in this blog
+        post are inline and inline-block.
+      </p>
+    </p>
   </body>
 </html>
