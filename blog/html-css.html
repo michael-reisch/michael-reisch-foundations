@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Concept Technical Blog</title>
-    <link rel="stylesheet" href="styles/html-css.css" />
+    <link rel="stylesheet" href="../styles/html-css.css" />
   </head>
+
   <body>
     <h1>CSS Concept Research - display: inline; vs display: inline-block;</h1>
     <p>
@@ -17,6 +18,7 @@
     </p>
 
     <img
+      id="img-box-model"
       src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Boxmodell-detail.png
     "
       alt="A picture of the the CSS Box Model"
@@ -33,25 +35,23 @@
       push other elements onto another line. Below is an example of three
       block-level elements and it's corresponding html and CSS:
     </p>
+
     <img
+      id="html-screenshot"
       src="https://i.postimg.cc/dQxVhdsz/Screen-Shot-2022-09-05-at-12-22-13-PM.png"
-      alt=""
+      alt="screenshot of html code"
     />
-
     <img
+      id="css-screenshot"
       src="https://i.postimg.cc/sX23Xftj/Screen-Shot-2022-09-05-at-12-23-08-PM.png"
-      alt=""
-    />
-    <img
-      src="https://i.postimg.cc/bJqj5Yz0/Screen-Shot-2022-09-05-at-12-08-19-PM.png"
-      alt=""
+      alt="screenshot of css code"
     />
 
-    <p>
-      You can adjust this default behaviour by accessing the display property in
-      CSS like this:
-    </p>
-    <p>element-selector {display: value}</p>
+    <img
+      class="browser-screenshot"
+      src="https://i.postimg.cc/bJqj5Yz0/Screen-Shot-2022-09-05-at-12-08-19-PM.png"
+      alt="screenshot of block-level elements"
+    />
 
     <p>
       There are numerous different display values that you can use to manipulate
@@ -59,7 +59,7 @@
       will be looking at in this blog post are inline and inline-block.
     </p>
 
-    <h2>Inline</h2>
+    <h1>Inline</h1>
     <p>
       Some elements that have display: inline; as their default property are:
       &#60;span&#62;, and &#60;label&#62;. Inline elements will take up only as
@@ -74,12 +74,14 @@
     </p>
 
     <img
+      class="css-screenshot"
       src="https://i.postimg.cc/vmgzd5mb/Screen-Shot-2022-09-05-at-12-17-39-PM.png"
-      alt=""
+      alt="screenshot of inline elements css code"
     />
     <img
+      class="browser-screenshot"
       src="https://i.postimg.cc/1ztdVg5j/Screen-Shot-2022-09-05-at-12-15-39-PM.png"
-      alt=""
+      alt="screenshot of inline elements"
     />
 
     <p>
@@ -89,7 +91,7 @@
       the inline display property!
     </p>
 
-    <h2>Inline-Block</h2>
+    <h1>Inline-Block</h1>
     <p>
       There are not too many html elements with inline-block as their default
       display property. But some that do are: &#60;img&#62; and
@@ -102,18 +104,20 @@
     </p>
 
     <img
+      class="css-screenshot"
       src="https://i.postimg.cc/CL8mR3Tk/Screen-Shot-2022-09-05-at-12-39-15-PM.png"
-      alt=""
+      alt="screenshot of css code inline-block elements"
     />
     <img
+      class="browser-screenshot"
       src="https://i.postimg.cc/cHKfV3dw/Screen-Shot-2022-09-05-at-12-40-17-PM.png"
-      alt=""
+      alt="screenshot of inline-block elements"
     />
 
-    <p>
+    <p id="last">
       Notice how the divs, which have a default display property of block, are
       now next to eachother on the same line <strong>and</strong> the height,
-      width and margin properties are all honoured. SUch is the nature of the
+      width and margin properties are all honoured. Such is the nature of the
       inline-block display property!
     </p>
   </body>
