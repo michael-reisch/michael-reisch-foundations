@@ -26,17 +26,95 @@
       Every html element has a default display property. The display property
       determines the element layout behaviour in relation to other elements on
       the page. For example, &#60;div&#62;, &#60;p&#62; and &#60;h1&#62; (among
-      other) elements are block-level elements. This means that the element's box will start on
-      their own line, and take up the entire width of that line. Block-level
-      elements will push other elements onto another line. You can adjust this
-      default behaviour by accessing the display property in CSS like this:
+      other) elements are block-level elements. This means that the element's
+      box will start on their own line, and take up the entire width of that
+      line. It's important to note that you <strong>can</strong> adjust height
+      and width properties of block-level elements. Block-level elements will
+      push other elements onto another line. Below is an example of three
+      block-level elements and it's corresponding html and CSS:
+    </p>
+    <img
+      src="https://i.postimg.cc/dQxVhdsz/Screen-Shot-2022-09-05-at-12-22-13-PM.png"
+      alt=""
+    />
 
-      <p>element-selector {display: value}</p> 
-      <p>
-        There are numerous different display values that you can use to manipulate 
-        the layout of your web page. The values we will be looking at in this blog
-        post are inline and inline-block.
-      </p>
+    <img
+      src="https://i.postimg.cc/sX23Xftj/Screen-Shot-2022-09-05-at-12-23-08-PM.png"
+      alt=""
+    />
+    <img
+      src="https://i.postimg.cc/bJqj5Yz0/Screen-Shot-2022-09-05-at-12-08-19-PM.png"
+      alt=""
+    />
+
+    <p>
+      You can adjust this default behaviour by accessing the display property in
+      CSS like this:
+    </p>
+    <p>element-selector {display: value}</p>
+
+    <p>
+      There are numerous different display values that you can use to manipulate
+      how each element flows within the layout of your web page. The values we
+      will be looking at in this blog post are inline and inline-block.
+    </p>
+
+    <h2>Inline</h2>
+    <p>
+      Some elements that have display: inline; as their default property are:
+      &#60;span&#62;, and &#60;label&#62;. Inline elements will take up only as
+      much space as they need, will not push other elements to new lines (so
+      they will display side-by-side), and
+      <strong>do not</strong> accept width, height or top-bottom margin
+      properties. However, they will accept padding and left-right margin
+      properties. Below is an example of the aforementioned three divs, which
+      have a default display property of block, changed to having a display
+      property of inline. The html is the same except for the inner text of the
+      div.
+    </p>
+
+    <img
+      src="https://i.postimg.cc/vmgzd5mb/Screen-Shot-2022-09-05-at-12-17-39-PM.png"
+      alt=""
+    />
+    <img
+      src="https://i.postimg.cc/1ztdVg5j/Screen-Shot-2022-09-05-at-12-15-39-PM.png"
+      alt=""
+    />
+
+    <p>
+      Notice how the divs, which have a default display property of block, are
+      now right next to eachother, sharing the same line. Notice also how the
+      height and width properties are completely ignored. This is the nature of
+      the inline display property!
+    </p>
+
+    <h2>Inline-Block</h2>
+    <p>
+      There are not too many html elements with inline-block as their default
+      display property. But some that do are: &#60;img&#62; and
+      &#60;button&#62;. Inline-block acts kind of like a hybrid of block and
+      inline display properties. They are similar to block-level elements in
+      that you can adjust the height, width and margin properties. And they are
+      similar to inline elements in that they can be placed next to eachother on
+      the same line. Please see the examples below, the html is the same as the
+      first example with the exception of the inner text of the div:
+    </p>
+
+    <img
+      src="https://i.postimg.cc/CL8mR3Tk/Screen-Shot-2022-09-05-at-12-39-15-PM.png"
+      alt=""
+    />
+    <img
+      src="https://i.postimg.cc/cHKfV3dw/Screen-Shot-2022-09-05-at-12-40-17-PM.png"
+      alt=""
+    />
+
+    <p>
+      Notice how the divs, which have a default display property of block, are
+      now next to eachother on the same line <strong>and</strong> the height,
+      width and margin properties are all honoured. SUch is the nature of the
+      inline-block display property!
     </p>
   </body>
 </html>
