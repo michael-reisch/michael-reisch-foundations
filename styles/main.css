@@ -3,7 +3,7 @@
   background-color: #0a2836;
   color: #e09575;
   font-family: 'Quicksand', sans-serif;
-  width: fit-content;
+  /* width: fit-content; */
 }
 /* html,
 #index-body {
@@ -22,7 +22,7 @@ a {
 #index-body {
   display: grid;
   max-width: 960px;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   grid-template-columns: 2fr 2fr;
   margin: 20px auto;
   /* margin-bottom: 50px; */
@@ -142,10 +142,11 @@ a {
 
 @media screen and (max-width: 1000px) {
   #index-body {
-    width: fit-content;
     display: grid;
     grid-template-columns: 1fr;
     text-align: center;
+    /* width: 100vw; */
+
     /* min-height: 100vh;
     min-width: 100vw; */
     /* max-width: 90%; */
