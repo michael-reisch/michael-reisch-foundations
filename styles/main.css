@@ -80,7 +80,7 @@ a {
   flex-direction: column;
   line-height: 1.5;
   margin: auto;
-  text-align: justify;
+  /* text-align:; */
   font-family: 'Quicksand', sans-serif;
   max-width: 80%;
 }
