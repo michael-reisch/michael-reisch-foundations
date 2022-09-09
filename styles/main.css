@@ -149,7 +149,7 @@ a {
 
     /* min-height: 100vh;
     min-width: 100vw; */
-    /* max-width: 90%; */
+    max-width: 95vw;
     /* margin: auto; */
 
     /* font-size: large; */
@@ -157,7 +157,7 @@ a {
 
   #links-header {
     border-bottom: 1px solid #e09575;
-    margin: 0 60px;
+    margin: 0 30px;
     padding-bottom: 7px;
   }
   #tree-image {
@@ -167,6 +167,11 @@ a {
   .about-and-blog-links {
     max-width: 70%;
     text-align: center;
+  }
+
+  .contact {
+    border-bottom: 1px solid #e09575;
+    margin: 0 30px;
   }
 
   .about {
