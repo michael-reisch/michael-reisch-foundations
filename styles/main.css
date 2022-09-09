@@ -149,11 +149,12 @@ a {
 
   .about {
     padding: 0 45px;
+    font-size: larger;
     text-align: justify;
   }
 
-  figcaption {
-    margin-bottom: 50px;
+  #image-caption {
+    margin-bottom: auto;
   }
 
   .blog-links > ul > li {
