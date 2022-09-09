@@ -17,6 +17,7 @@ a {
   max-height: 100vh;
   grid-template-columns: 2fr 2fr;
   margin: 50px auto;
+  /* margin-bottom: 50px; */
 }
 
 .email,
@@ -78,21 +79,22 @@ a {
   display: flex;
   flex-direction: column;
   line-height: 1.5;
-  margin: 70px 200px;
-  text-align: center;
-  /* max-width: 60%; */
+  margin: auto;
+  text-align: justify;
+  font-family: 'Quicksand', sans-serif;
+  max-width: 80%;
 }
-.tech-blog-p {
+/* .tech-blog-p {
   max-width: 70%;
   text-align: center;
   margin: auto;
   padding-bottom: 20px;
-}
+} */
 
-.tech-blog-h1 {
+/* .tech-blog-h1 {
   margin: auto;
   padding-bottom: 20px;
-}
+} */
 .tech-blog-img {
   display: block;
   margin: auto;
