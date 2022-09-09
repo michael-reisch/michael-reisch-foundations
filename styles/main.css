@@ -10,6 +10,7 @@ a {
   color: #499792;
   text-decoration: none;
 }
+
 #index-body {
   display: grid;
   max-width: 960px;
@@ -69,4 +70,78 @@ a {
   padding: 0 50px 0 0;
   text-align: justify;
   line-height: 1.5;
+}
+
+/* -------------blog stylings ------------------------ */
+
+.blog-body {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 70px;
+  margin-top: 70px;
+}
+.tech-blog-p {
+  max-width: 70%;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.tech-blog-h1 {
+  margin: auto;
+  padding-bottom: 20px;
+}
+.tech-blog-img {
+  display: block;
+  margin: auto;
+  padding-bottom: 20px;
+  max-width: 50%;
+  border-radius: 2%;
+}
+
+.home-button {
+  margin: auto;
+  color: #0a2836;
+  height: 40px;
+  width: 70px;
+  background-color: blanchedalmond;
+  text-align: center;
+  border-radius: 10%;
+  margin: auto;
+  /* padding: 1rem; */
+}
+
+/* ----------- smaller screen sizes ------------------ */
+
+@media screen and (max-width: 1000px) {
+  #index-body {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    /* margin-bottom: 30px; */
+
+    font-size: large;
+  }
+  #tree-image {
+    /* max-width: 90vw; */
+  }
+
+  .about-and-blog-links {
+    max-width: 70%;
+    text-align: center;
+  }
+
+  .about {
+    padding: 0 45px;
+    text-align: justify;
+  }
+
+  figcaption {
+    margin-bottom: 50px;
+  }
+
+  .blog-links > ul > li {
+    display: inline;
+    margin: 0 20px;
+  }
 }
