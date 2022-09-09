@@ -1,3 +1,72 @@
-body {
-  background-color: aquamarine;
+* {
+  box-sizing: border-box;
+  background-color: #0d374b;
+  color: #e09575;
+
+  font-family: 'Quicksand', sans-serif;
+}
+
+a {
+  color: #499792;
+  text-decoration: none;
+}
+#index-body {
+  display: grid;
+  max-width: 960px;
+  max-height: 90vh;
+  grid-template-columns: 2fr 2fr;
+  margin: 50px auto;
+}
+
+.email,
+.location,
+.github-link {
+  margin: auto;
+}
+
+.name {
+  font-size: x-large;
+}
+
+#github-logo {
+  max-height: 50px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#tree-image {
+  border-radius: 10%;
+  max-height: 600px;
+}
+
+#about-and-blog-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#image-caption {
+  text-align: center;
+}
+#tree-figure {
+  margin: 0;
+}
+.blog-links {
+}
+
+.blog-links > ul > li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.blog-links > ul {
+  padding: 0;
+}
+.about {
+  padding: 0 50px 0 0;
+  text-align: justify;
+  line-height: 1.5;
 }
