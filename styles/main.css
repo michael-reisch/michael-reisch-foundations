@@ -1,189 +1,149 @@
 * {
   box-sizing: border-box;
-}
+  background-color: #0a2836;
+  color: #e09575;
 
-body {
-  margin: 0;
-  padding: 2rem;
-  background-color: #003049;
-  color: #fcbf49;
+  font-family: 'Quicksand', sans-serif;
 }
 
 a {
-  color: #fcbf49;
-}
-
-a:hover {
-  color: #8a7ed6;
-}
-
-#left {
-  width: 15%;
-  float: left;
-}
-
-#nav {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-#nav-title {
-  text-align: center;
-  margin: 1px 0;
-  border: 1px solid #d62828;
-  border-radius: 10px;
-}
-
-#nav li {
-  text-align: center;
-  margin: 1px 0;
-  border: 1px solid #d62828;
-  border-radius: 10px;
-}
-
-#nav li a {
-  display: block;
-  line-height: 3em;
-  width: 100%;
+  color: #499792;
   text-decoration: none;
 }
-#page-intro {
-  text-align: center;
-  margin: auto;
-}
 
-#photo-container {
-  text-align: center;
-}
-
-#photo-intro {
-  text-align: center;
-  margin: auto;
-  max-width: 60%;
-}
-
-#photo-gallery {
-  text-align: center;
-  padding: 20px 10px;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-figure {
-  max-width: 60%;
-  margin: auto;
-  margin-bottom: 50px;
-}
-
-.caption {
-  text-align: center;
-}
-
-.photo {
-  width: 100%;
-  max-width: 600px;
-  height: 100%;
-  max-height: 400px;
-  object-fit: cover;
-  border-radius: 10px;
-  border: 1px solid #d62828;
-  margin-bottom: 20px;
-}
-
-#link-container {
-  text-align: center;
-}
-
-#link-list {
-  text-align: center;
-  list-style: none;
-}
-
-#link-container {
-  margin: auto;
-  margin-bottom: 100px;
-  border: 10px outset #d62828;
-  border-radius: 10%;
-  max-width: 70%;
-}
-
-.home-button {
-  font-size: xx-large;
-}
-
-/* tech blog styling */
-.tech-blog-img {
-  display: block;
+#index-body {
+  display: grid;
+  max-width: 960px;
+  max-height: 100vh;
+  grid-template-columns: 2fr 2fr;
   margin: 50px auto;
-  border-radius: 10px;
-  max-width: 50%;
+}
+
+.email,
+.location,
+.github-link {
+  margin: auto;
+}
+
+.name {
+  font-size: x-large;
+}
+
+#github-logo {
+  max-height: 50px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#tree-image {
+  border-radius: 10%;
+  max-height: 600px;
+}
+
+#about-and-blog-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#image-caption {
+  text-align: center;
+}
+#tree-figure {
+  margin: 0;
+}
+.blog-links {
+}
+
+.blog-links > ul > li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.blog-links > ul {
+  padding: 0;
+}
+.about {
+  padding: 0 50px 0 0;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+/* -------------blog stylings ------------------------ */
+
+.blog-body {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  margin: 70px 200px;
+  text-align: center;
+  /* max-width: 60%; */
+}
+.tech-blog-p {
+  max-width: 70%;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 20px;
 }
 
 .tech-blog-h1 {
+  margin: auto;
+  padding-bottom: 20px;
+}
+.tech-blog-img {
+  display: block;
+  margin: auto;
+  padding-bottom: 20px;
+  max-width: 50%;
+  border-radius: 2%;
+}
+
+.home-button {
+  margin: auto;
+  color: #0a2836;
+  height: 40px;
+  width: 70px;
+  background-color: blanchedalmond;
   text-align: center;
+  border-radius: 10%;
+  margin: auto;
+  /* padding: 1rem; */
 }
 
-.tech-blog-p {
-  text-align: center;
-  margin: 0 100px;
-  max-width: 90%;
-  font-size: larger;
-}
+/* ----------- smaller screen sizes ------------------ */
 
-#tech-blog-p-last {
-  margin-bottom: 300px;
-}
+@media screen and (max-width: 1000px) {
+  #index-body {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    /* margin-bottom: 30px; */
 
-@media screen and (max-width: 900px) {
-  body {
-    padding: 0;
+    font-size: large;
+  }
+  #tree-image {
+    /* max-width: 90vw; */
   }
 
-  .caption {
-    display: none;
-  }
-
-  .photo {
-    max-height: 200px;
-  }
-
-  #photo-intro {
-    max-width: 90%;
-  }
-
-  #left {
-    float: none;
-    display: inline;
-    margin: auto;
-    width: 100%;
-  }
-
-  #nav {
-    display: inline;
-    margin: auto;
-    max-width: 100%;
-    padding: 5px;
-    list-style: none;
+  .about-and-blog-links {
+    max-width: 70%;
     text-align: center;
   }
 
-  #nav li {
-    display: inline-block;
-    margin: 1px 0;
-    border: 1px solid #d69f7e;
+  .about {
+    padding: 0 45px;
+    text-align: justify;
   }
 
-  #nav li a {
+  figcaption {
+    margin-bottom: 50px;
+  }
+
+  .blog-links > ul > li {
     display: inline;
-    line-height: 3em;
-    /* width: 25%; */
-    text-decoration: none;
-  }
-}
-
-@media screen and (min-width: 889px) {
-  .photo {
-    max-width: 90rem;
+    margin: 0 20px;
   }
 }
