@@ -13,10 +13,10 @@
     />
     <link rel="stylesheet" href="../styles/blog-posts.css" />
   </head>
-  <body>
-    <h1>The Fundamentals of JavaScript</h1>
+  <body class="blog-body">
+    <h1 class="blog-title">The Fundamentals of JavaScript</h1>
     <section class="article-section">
-      <h2>Relationship of HTML, CSS and JS Analogy</h2>
+      <h2 class="blog-subtitle">Relationship of HTML, CSS and JS Analogy</h2>
       <p>
         Let’s say we’re going to build a house. HTML would be the frame of the
         house. We know the house has two bedrooms and one bathroom, but at the
@@ -37,7 +37,7 @@
       </p>
     </section>
     <section class="article-section">
-      <h1>Control Flow and Loops</h1>
+      <h2 class="blog-subtitle">Control Flow and Loops</h2>
       <p>
         Control flow in JavaScript is the order in which computer executes
         statements in a script. By default, the code is run from top to bottom,
@@ -62,7 +62,7 @@
       </p>
     </section>
     <section class="article-section">
-      <h2>What Is The DOM?</h2>
+      <h2 class="blog-subtitle">What Is The DOM?</h2>
       <p>
         The DOM is the Document Object Model: a large collection of key: value
         pairs (aka nodes) that represent all of the structure, content and style
@@ -79,13 +79,17 @@
         that has one property (of many) called innerHTML. The innerHTML property
         is what is written between the opening and closing tags:
       </p>
-      <img src="../assets/divHTML.png" alt="image of div html syntax" />
+      <img
+        class="blog-image"
+        src="../assets/divHTML.png"
+        alt="image of div html syntax"
+      />
       <p>
         This innerHTML text is then rendered to the webpage. If you wanted to
         access this div and then change its innerHTML, you would access it with
         the following syntax in JS:
       </p>
-      <img src="../assets/divJS.png" alt="" />
+      <img class="blog-image" src="../assets/divJS.png" alt="" />
       <p>
         With this syntax, you have adjusted the innerHTML text of the div with
         id=’bigList’ to ‘Dang this is a big list…’. This syntax is called dot
@@ -101,7 +105,7 @@
       </p>
     </section>
     <section class="article-section">
-      <h1>What Are Arrays and Objects?</h1>
+      <h2>What Are Arrays and Objects?</h2>
       <p>
         Arrays and objects are both elements to store data, though they store
         them in different ways.
@@ -120,7 +124,7 @@
         is not directly visible in the array itself. If I wanted to access the
         third item (index 2) in my groceries array, I would use the following:
       </p>
-      <img src="../assets/access-array.png" alt="" />
+      <img class="blog-image" src="../assets/access-array.png" alt="" />
       <p>
         Which would return the item in the groceries with index of 2, which is
         peanut butter.
@@ -132,12 +136,20 @@
         just about anything in an object. Say I want to create an object for my
         imaginary pet hamster. It would look like this:
       </p>
-      <img src="../assets/object.png" alt="image of an object" />
+      <img
+        class="blog-image"
+        src="../assets/object.png"
+        alt="image of an object"
+      />
       <p>
         If I wanted to access the data in my hamster object, I would use the
         following syntax:
       </p>
-      <img src="../assets/access-objects.png" alt="accessing objects syntax" />
+      <img
+        class="blog-image"
+        src="../assets/access-objects.png"
+        alt="accessing objects syntax"
+      />
       <p>
         Arrays and objects are extremely powerful programming tools. You can
         even nest objects within objects, arrays within objects, objects within
@@ -145,7 +157,7 @@
       </p>
     </section>
     <section class="article-section">
-      <h1>What Are Functions?</h1>
+      <h2 class="blog-subtitle">What Are Functions?</h2>
       <p>
         Functions are basically reusable blocks of code that can be called
         infinitely throughout a program in an efficient way. They are helpful
@@ -154,7 +166,7 @@
         it whenever it is needed. This helps to cut down on clutter and make
         your program easier to read and understand.
       </p>
-      <img src="../assets/function.png" alt="" />
+      <img class="blog-image" src="../assets/function.png" alt="" />
     </section>
     <a class="home-button" href="../index.html">Home</a>
   </body>

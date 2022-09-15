@@ -7,43 +7,18 @@
 }
 
 .blog-body {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.5;
-  justify-content: center;
-  /* margin: auto; */
-  /* margin: auto; */
-  /* text-align:; */
-  font-family: 'Quicksand', sans-serif;
-  max-width: 70%;
-  margin-left: 100px;
+  position: relative;
 }
-/* .tech-blog-p {
-  max-width: 70%;
-  text-align: center;
-  margin: auto;
-  padding-bottom: 20px;
-} */
-
-/* .tech-blog-h1 {
-  margin: auto;
-  padding-bottom: 20px;
-} */
-.tech-blog-img {
-  display: block;
-  margin: auto;
-  padding-bottom: 20px;
-  max-width: 50%;
-  border-radius: 2%;
+.blog-title {
 }
 
-.tech-blog-h1 {
-  text-align: center;
+.blog-subtitle {
 }
 
-.tech-blog-p {
-  margin-bottom: 20px;
-  padding-left: 50px;
+.blog-section {
+}
+
+.blog-image {
 }
 
 .home-button {
