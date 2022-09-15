@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  background-color: #0a2836;
+  color: #e09575;
+  font-family: 'Quicksand', sans-serif;
+  /* width: fit-content; */
+}
+
+.blog-body {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  justify-content: center;
+  /* margin: auto; */
+  /* margin: auto; */
+  /* text-align:; */
+  font-family: 'Quicksand', sans-serif;
+  max-width: 70%;
+  margin-left: 100px;
+}
+/* .tech-blog-p {
+  max-width: 70%;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 20px;
+} */
+
+/* .tech-blog-h1 {
+  margin: auto;
+  padding-bottom: 20px;
+} */
+.tech-blog-img {
+  display: block;
+  margin: auto;
+  padding-bottom: 20px;
+  max-width: 50%;
+  border-radius: 2%;
+}
+
+.tech-blog-h1 {
+  text-align: center;
+}
+
+.tech-blog-p {
+  margin-bottom: 20px;
+  padding-left: 50px;
+}
+
+.home-button {
+  margin: auto;
+  color: #0a2836;
+  height: 40px;
+  width: 70px;
+  background-color: blanchedalmond;
+  text-align: center;
+  border-radius: 10%;
+  margin: auto;
+  /* padding: 1rem; */
+}
