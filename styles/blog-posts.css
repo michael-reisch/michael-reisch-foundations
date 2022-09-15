@@ -41,6 +41,10 @@ ol {
   justify-content: center;
 }
 
+.blog-h3 {
+  text-align: left;
+}
+
 .blog-image {
   min-width: 350px;
   max-width: 50%;
@@ -48,7 +52,7 @@ ol {
   text-align: center;
   border-radius: 3%;
 }
-p {
+.blog-section > p {
   text-align: justify;
 }
 .home-button {
@@ -60,5 +64,6 @@ p {
   text-align: center;
   border-radius: 10%;
   margin: auto;
+  margin-bottom: 75px;
   /* padding: 1rem; */
 }
