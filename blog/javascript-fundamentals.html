@@ -14,160 +14,164 @@
     <link rel="stylesheet" href="../styles/blog-posts.css" />
   </head>
   <body class="blog-body">
-    <h1 class="blog-title">The Fundamentals of JavaScript</h1>
-    <section class="article-section">
-      <h2 class="blog-subtitle">Relationship of HTML, CSS and JS Analogy</h2>
-      <p>
-        Let’s say we’re going to build a house. HTML would be the frame of the
-        house. We know the house has two bedrooms and one bathroom, but at the
-        moment they’re just empty rooms with no walls. Just bare wood framing.
-        <br />
-        <br />
+    <main class="blog-main">
+      <h1 class="blog-title">The Fundamentals of JavaScript</h1>
+      <section class="article-section">
+        <h2 class="blog-subtitle">Relationship of HTML, CSS and JS Analogy</h2>
+        <p>
+          Let’s say we’re going to build a house. HTML would be the frame of the
+          house. We know the house has two bedrooms and one bathroom, but at the
+          moment they’re just empty rooms with no walls. Just bare wood framing.
+          <br />
+          <br />
 
-        CSS would be the decoration of the house: the walls, the paint, the
-        appliances, the furniture, the lighting. All the decoration that make a
-        house a pleasant place to live is CSS.
-        <br />
-        <br />
-        JavaScript would be all the things you can do in the house and make it a
-        home: eat, sleep, make the bed. I might even say that JS includes all
-        the utilities of the house as well: plumbing, electricity, gas. As these
-        move elements around the house to be used to do things, just like how JS
-        moves data around and manipulates other elements.
-      </p>
-    </section>
-    <section class="article-section">
-      <h2 class="blog-subtitle">Control Flow and Loops</h2>
-      <p>
-        Control flow in JavaScript is the order in which computer executes
-        statements in a script. By default, the code is run from top to bottom,
-        first line to last line. This changes if there are structures such as
-        loops or conditionals which change the control flow.
-        <br />
-        <br />
-        A loop would interrupt the default control flow and cycle through the
-        loop until there is nothing left to cycle through, and then continue
-        with the rest of the code. A conditional statement would only run if
-        certain conditions are met, and then run code within that conditional
-        statement, before continuing on with the rest of the code.
-        <br />
-        <br />
-        An analogy of this is an airport. The normal control flow is planes
-        taking off and landing. The control flow is interrupted to cycle through
-        the loops of loading passengers one at a time, loading luggage one at a
-        time and offloading passengers and offloading luggage. Also, if the
-        plane requires fuel, then the fuel is refilled. If the plane needs
-        maintenance, then it is taken out of the control flow until it is ready
-        to fly again.
-      </p>
-    </section>
-    <section class="article-section">
-      <h2 class="blog-subtitle">What Is The DOM?</h2>
-      <p>
-        The DOM is the Document Object Model: a large collection of key: value
-        pairs (aka nodes) that represent all of the structure, content and style
-        within a web page. Because the DOM is represented as an object,
-        programming languages such as JavaScript can interact and change
-        elements of the DOM efficiently.
-        <br />
-        <br />
-        If you consider a basic HTML document with its myriad elements such as
-        H1, p, form, article, etc., each of these elements is a node. Each node
-        is part of the overall DOM object. Additionally, many of the nodes are
-        objects as well with different properties that can be adjusted. For
-        example, you may have a div with id=”bigList”. This div is an object
-        that has one property (of many) called innerHTML. The innerHTML property
-        is what is written between the opening and closing tags:
-      </p>
-      <img
-        class="blog-image"
-        src="../assets/divHTML.png"
-        alt="image of div html syntax"
-      />
-      <p>
-        This innerHTML text is then rendered to the webpage. If you wanted to
-        access this div and then change its innerHTML, you would access it with
-        the following syntax in JS:
-      </p>
-      <img class="blog-image" src="../assets/divJS.png" alt="" />
-      <p>
-        With this syntax, you have adjusted the innerHTML text of the div with
-        id=’bigList’ to ‘Dang this is a big list…’. This syntax is called dot
-        notation. It is a means of traversing the DOM. First you access the
-        overall ‘document’, followed by getElementById(‘bigList’) which
-        specifically targets an element with id=’bigList’, followed by the
-        property you want to change, in this case the innerHTML property. All of
-        these steps are separated by ‘dots’. You could think of each dot as a
-        step deeper into the DOM. First you enter the DOM, then select
-        specifically what element you want you change, followed by which
-        property you want to change, followed by an equals sign and then what
-        the selected property of the selected element will be set to.
-      </p>
-    </section>
-    <section class="article-section">
-      <h2>What Are Arrays and Objects?</h2>
-      <p>
-        Arrays and objects are both elements to store data, though they store
-        them in different ways.
-      </p>
-      <h3>Arrays</h3>
-      <p>
-        An array can be thought in its most simplistic form as a list. Each item
-        of this list has an index starting from 0. Imagine a grocery list with
-        everything you need to buy, and each individual food item has a number
-        starting from zero next to it.
-      </p>
-      <img src="../assets/array.png" alt="" />
+          CSS would be the decoration of the house: the walls, the paint, the
+          appliances, the furniture, the lighting. All the decoration that make
+          a house a pleasant place to live is CSS.
+          <br />
+          <br />
+          JavaScript would be all the things you can do in the house and make it
+          a home: eat, sleep, make the bed. I might even say that JS includes
+          all the utilities of the house as well: plumbing, electricity, gas. As
+          these move elements around the house to be used to do things, just
+          like how JS moves data around and manipulates other elements.
+        </p>
+      </section>
+      <section class="article-section">
+        <h2 class="blog-subtitle">Control Flow and Loops</h2>
+        <p>
+          Control flow in JavaScript is the order in which computer executes
+          statements in a script. By default, the code is run from top to
+          bottom, first line to last line. This changes if there are structures
+          such as loops or conditionals which change the control flow.
+          <br />
+          <br />
+          A loop would interrupt the default control flow and cycle through the
+          loop until there is nothing left to cycle through, and then continue
+          with the rest of the code. A conditional statement would only run if
+          certain conditions are met, and then run code within that conditional
+          statement, before continuing on with the rest of the code.
+          <br />
+          <br />
+          An analogy of this is an airport. The normal control flow is planes
+          taking off and landing. The control flow is interrupted to cycle
+          through the loops of loading passengers one at a time, loading luggage
+          one at a time and offloading passengers and offloading luggage. Also,
+          if the plane requires fuel, then the fuel is refilled. If the plane
+          needs maintenance, then it is taken out of the control flow until it
+          is ready to fly again.
+        </p>
+      </section>
+      <section class="article-section">
+        <h2 class="blog-subtitle">What Is The DOM?</h2>
+        <p>
+          The DOM is the Document Object Model: a large collection of key: value
+          pairs (aka nodes) that represent all of the structure, content and
+          style within a web page. Because the DOM is represented as an object,
+          programming languages such as JavaScript can interact and change
+          elements of the DOM efficiently.
+          <br />
+          <br />
+          If you consider a basic HTML document with its myriad elements such as
+          H1, p, form, article, etc., each of these elements is a node. Each
+          node is part of the overall DOM object. Additionally, many of the
+          nodes are objects as well with different properties that can be
+          adjusted. For example, you may have a div with id=”bigList”. This div
+          is an object that has one property (of many) called innerHTML. The
+          innerHTML property is what is written between the opening and closing
+          tags:
+        </p>
+        <img
+          class="blog-image"
+          src="../assets/divHTML.png"
+          alt="image of div html syntax"
+        />
+        <p>
+          This innerHTML text is then rendered to the webpage. If you wanted to
+          access this div and then change its innerHTML, you would access it
+          with the following syntax in JS:
+        </p>
+        <img class="blog-image" src="../assets/divJS.png" alt="" />
+        <p>
+          With this syntax, you have adjusted the innerHTML text of the div with
+          id=’bigList’ to ‘Dang this is a big list…’. This syntax is called dot
+          notation. It is a means of traversing the DOM. First you access the
+          overall ‘document’, followed by getElementById(‘bigList’) which
+          specifically targets an element with id=’bigList’, followed by the
+          property you want to change, in this case the innerHTML property. All
+          of these steps are separated by ‘dots’. You could think of each dot as
+          a step deeper into the DOM. First you enter the DOM, then select
+          specifically what element you want you change, followed by which
+          property you want to change, followed by an equals sign and then what
+          the selected property of the selected element will be set to.
+        </p>
+      </section>
+      <section class="article-section">
+        <h2>What Are Arrays and Objects?</h2>
+        <p>
+          Arrays and objects are both elements to store data, though they store
+          them in different ways.
+        </p>
+        <h3>Arrays</h3>
+        <p>
+          An array can be thought in its most simplistic form as a list. Each
+          item of this list has an index starting from 0. Imagine a grocery list
+          with everything you need to buy, and each individual food item has a
+          number starting from zero next to it.
+        </p>
+        <img src="../assets/array.png" alt="" />
 
-      <p>
-        The items in the list can be accessed via their index, though the index
-        is not directly visible in the array itself. If I wanted to access the
-        third item (index 2) in my groceries array, I would use the following:
-      </p>
-      <img class="blog-image" src="../assets/access-array.png" alt="" />
-      <p>
-        Which would return the item in the groceries with index of 2, which is
-        peanut butter.
-      </p>
-      <h3>Objects</h3>
-      <p>
-        An object, on the other hand, is slightly more complex in that they
-        store data with what are called key: value pairs. You can store data for
-        just about anything in an object. Say I want to create an object for my
-        imaginary pet hamster. It would look like this:
-      </p>
-      <img
-        class="blog-image"
-        src="../assets/object.png"
-        alt="image of an object"
-      />
-      <p>
-        If I wanted to access the data in my hamster object, I would use the
-        following syntax:
-      </p>
-      <img
-        class="blog-image"
-        src="../assets/access-objects.png"
-        alt="accessing objects syntax"
-      />
-      <p>
-        Arrays and objects are extremely powerful programming tools. You can
-        even nest objects within objects, arrays within objects, objects within
-        arrays and so much more! But this is a topic for another time…
-      </p>
-    </section>
-    <section class="article-section">
-      <h2 class="blog-subtitle">What Are Functions?</h2>
-      <p>
-        Functions are basically reusable blocks of code that can be called
-        infinitely throughout a program in an efficient way. They are helpful
-        because if you find yourself using a specific block of code repeatedly,
-        you can instead define this repeating code as a function and then call
-        it whenever it is needed. This helps to cut down on clutter and make
-        your program easier to read and understand.
-      </p>
-      <img class="blog-image" src="../assets/function.png" alt="" />
-    </section>
+        <p>
+          The items in the list can be accessed via their index, though the
+          index is not directly visible in the array itself. If I wanted to
+          access the third item (index 2) in my groceries array, I would use the
+          following:
+        </p>
+        <img class="blog-image" src="../assets/access-array.png" alt="" />
+        <p>
+          Which would return the item in the groceries with index of 2, which is
+          peanut butter.
+        </p>
+        <h3>Objects</h3>
+        <p>
+          An object, on the other hand, is slightly more complex in that they
+          store data with what are called key: value pairs. You can store data
+          for just about anything in an object. Say I want to create an object
+          for my imaginary pet hamster. It would look like this:
+        </p>
+        <img
+          class="blog-image"
+          src="../assets/object.png"
+          alt="image of an object"
+        />
+        <p>
+          If I wanted to access the data in my hamster object, I would use the
+          following syntax:
+        </p>
+        <img
+          class="blog-image"
+          src="../assets/access-objects.png"
+          alt="accessing objects syntax"
+        />
+        <p>
+          Arrays and objects are extremely powerful programming tools. You can
+          even nest objects within objects, arrays within objects, objects
+          within arrays and so much more! But this is a topic for another time…
+        </p>
+      </section>
+      <section class="article-section">
+        <h2 class="blog-subtitle">What Are Functions?</h2>
+        <p>
+          Functions are basically reusable blocks of code that can be called
+          infinitely throughout a program in an efficient way. They are helpful
+          because if you find yourself using a specific block of code
+          repeatedly, you can instead define this repeating code as a function
+          and then call it whenever it is needed. This helps to cut down on
+          clutter and make your program easier to read and understand.
+        </p>
+        <img class="blog-image" src="../assets/function.png" alt="" />
+      </section>
+    </main>
     <a class="home-button" href="../index.html">Home</a>
   </body>
 </html>
