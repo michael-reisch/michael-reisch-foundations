@@ -24,22 +24,27 @@ a {
 }
 
 .name {
-  font-size: x-large;
+  /* font-size: 1.5rem; */
   margin: auto;
+  text-shadow: -2.5px -2.5px 5px black;
 }
 
 #github-logo {
   max-height: 50px;
+  box-shadow: -5px -5px 10px black;
+  border-radius: 50%;
 }
 
 .contact {
   display: flex;
   justify-content: space-evenly;
+  text-shadow: -1.5px -1.5px 2.5px black;
 }
 
 #tree-image {
   border-radius: 10%;
   max-height: 600px;
+  box-shadow: -10px -10px 20px black;
 }
 
 #about-and-blog-links {
@@ -55,8 +60,6 @@ a {
 #tree-figure {
   margin: 0;
 }
-.blog-links {
-}
 
 .blog-links > ul > li {
   list-style: none;
@@ -67,10 +70,11 @@ a {
   padding: 0;
 }
 
-.about {
+.about > p {
   padding: 0 50px 0 0;
   text-align: justify;
-  line-height: 1.5;
+  line-height: 1.1;
+  font-size: 1.24rem;
 }
 
 /* ----------- smaller screen sizes ------------------ */
@@ -84,13 +88,17 @@ a {
     max-width: 95vw;
   }
 
+  .name {
+    font-size: 2.25rem;
+  }
+
   #links-header {
     border-bottom: 1px solid #e09575;
     margin: 0 30px;
     padding-bottom: 7px;
   }
   #tree-image {
-    /* max-width: 99vw; */
+    margin-top: 30px;
   }
 
   .about-and-blog-links {
@@ -103,10 +111,12 @@ a {
     margin: 0 30px;
   }
 
-  .about {
+  .about > p {
     padding: 0 45px;
     font-size: larger;
     text-align: justify;
+    line-height: 1.75rem;
+    justify-content: center;
   }
 
   #image-caption {
@@ -115,6 +125,6 @@ a {
 
   .blog-links > ul > li {
     display: inline;
-    margin: 0 20px;
+    margin: 3rem 2rem;
   }
 }

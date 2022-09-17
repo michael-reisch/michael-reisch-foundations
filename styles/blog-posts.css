@@ -17,7 +17,7 @@
   margin: auto;
 }
 .blog-title {
-  text-decoration: underline;
+  border-bottom: 2px solid #e09575;
   font-weight: 700;
   text-align: center;
 }
@@ -32,6 +32,8 @@
 .blog-subtitle {
   text-decoration: underline;
   text-align: left;
+  background-color: #051d27;
+  padding: 1.1rem;
 }
 
 .blog-section p,
@@ -51,8 +53,9 @@ ol {
   max-width: 90%;
   margin: 2rem;
   text-align: center;
-  border-radius: 3%;
-  box-shadow: 5px 5px 10px burlywood;
+  /* border-radius: 3%; */
+  box-shadow: -5px -5px 10px black;
+  border: 2px solid grey;
 }
 .blog-section p {
   text-align: justify;
@@ -67,5 +70,6 @@ ol {
   margin: auto;
   margin-bottom: 75px;
   margin-top: 50px;
+  box-shadow: -5px -5px 5px black;
   /* padding: 1rem; */
 }
