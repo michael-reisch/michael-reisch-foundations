@@ -22,10 +22,6 @@
   text-align: center;
 }
 
-.blog-subtitle {
-  text-decoration: underline;
-}
-
 .blog-section {
   display: flex;
   flex-direction: column;
@@ -33,7 +29,12 @@
   align-items: center;
 }
 
-.blog-section > p,
+.blog-subtitle {
+  text-decoration: underline;
+  text-align: left;
+}
+
+.blog-section p,
 ul,
 ol {
   font-size: 1.2rem;
@@ -51,8 +52,9 @@ ol {
   margin: 2rem;
   text-align: center;
   border-radius: 3%;
+  box-shadow: 5px 5px 10px burlywood;
 }
-.blog-section > p {
+.blog-section p {
   text-align: justify;
 }
 .home-button {
