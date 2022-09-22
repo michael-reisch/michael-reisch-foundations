@@ -155,11 +155,12 @@ a {
   .blog-links {
     display: flex;
     flex-wrap: wrap;
-    align-content: space-evenly;
-    justify-content: center;
+    /* align-content: space-evenly; */
+    /* justify-content: flex-start; */
     gap: 10px;
     text-align: center;
-    padding: 10px 10px;
+    padding: 0px;
+    margin: 10px 10px 10px 20px;
   }
 
   .blog-links li {
