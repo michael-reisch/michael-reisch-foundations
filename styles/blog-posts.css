@@ -34,6 +34,7 @@
   text-align: left;
   background-color: #051d27;
   padding: 1.1rem;
+  border-radius: 5rem;
 }
 
 .blog-section p,
@@ -53,7 +54,7 @@ ol {
   max-width: 90%;
   margin: 2rem;
   text-align: center;
-  /* border-radius: 3%; */
+  border-radius: 3%;
   box-shadow: -5px -5px 10px black;
   border: 2px solid grey;
 }
@@ -71,5 +72,5 @@ ol {
   margin-bottom: 75px;
   margin-top: 50px;
   box-shadow: -5px -5px 5px black;
-  /* padding: 1rem; */
+  padding-top: 10px;
 }
