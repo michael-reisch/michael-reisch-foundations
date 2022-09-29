@@ -41,8 +41,8 @@
 ul,
 ol {
   font-size: 1.2rem;
-  text-align: justify;
-  justify-content: center;
+  /* text-align: justify; */
+  /* justify-content: center; */
 }
 
 .blog-h3 {
@@ -58,9 +58,9 @@ ol {
   box-shadow: -5px -5px 10px black;
   border: 2px solid grey;
 }
-.blog-section p {
+/* .blog-section p {
   text-align: justify;
-}
+} */
 .home-button {
   color: #0a2836;
   height: 40px;
